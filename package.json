@@ -1,0 +1,31 @@
+{
+  "name": "gulp-ngm-umdwrap",
+  "version": "1.0.0",
+  "description": "umdwrap",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhrln/gulp-umdwrap.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "umdwrap"
+  ],
+  "author": "zhangrui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhrln/gulp-umdwrap/issues"
+  },
+  "homepage": "https://github.com/zhrln/gulp-umdwrap#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
