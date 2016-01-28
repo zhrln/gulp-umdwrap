@@ -11,7 +11,7 @@ var through = require('through2');
 var PLUGIN_NAME = 'gulp-ngm-umdwrap';
 
 function process(ctn){
-    var wrapFile = fs.readFileSync('wrap.tpl').toString();
+    var wrapFile = fs.readFileSync(path.join(__dirname, 'wrap.tpl')).toString();
     return util.format(wrapFile, 'umdwrap', ctn);
 }
 
