@@ -10,10 +10,16 @@ var through = require('through2');
 // consts
 var PLUGIN_NAME = 'gulp-ngm-umdwrap';
 
+function camelCase(name){
+    return name.replace(/-([\da-z])/gi,function(all, letter){
+        return letter.toUpperCase();
+    })
+}
+
 function process(name, ctn){
     name = name || ('umdwrap_' + Math.random().toString(16).substring(2));
     var wrapFile = fs.readFileSync(path.join(__dirname, 'wrap.tpl')).toString();
-    return util.format(wrapFile, name, ctn);
+    return util.format(wrapFile, camelCase(name), ctn);
 }
 
 module.exports = function(options) {

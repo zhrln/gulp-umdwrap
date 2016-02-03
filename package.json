@@ -1,6 +1,6 @@
 {
   "name": "gulp-ngm-umdwrap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "umdwrap",
   "main": "index.js",
   "scripts": {
