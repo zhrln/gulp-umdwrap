@@ -4,4 +4,4 @@ require("<%=n%>");
 
 <%=code%>;
 
-module.exports = <%=exp%>();
+module.exports = <%=exp%>;
